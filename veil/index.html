@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Veil Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: #f4f7fc;
+        color: #16202a;
+        font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      }
+      main {
+        max-width: 920px;
+        margin: 24px auto;
+        padding: 24px;
+        background: #ffffff;
+        border: 1px solid #d9e3ef;
+        border-radius: 8px;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 30px;
+        line-height: 1.2;
+      }
+      h2 {
+        margin-top: 28px;
+        margin-bottom: 8px;
+        font-size: 22px;
+        line-height: 1.3;
+      }
+      h3 {
+        margin-top: 20px;
+        margin-bottom: 6px;
+        font-size: 18px;
+        line-height: 1.3;
+      }
+      p {
+        margin: 8px 0;
+      }
+      ul {
+        margin: 8px 0 8px 20px;
+      }
+      li {
+        margin: 4px 0;
+      }
+      .meta {
+        color: #4c5d6f;
+        margin-bottom: 12px;
+      }
+      a {
+        color: #0d5aa7;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Veil Privacy Policy</h1>
+      <p class="meta"><strong>Effective date:</strong> February 16, 2026<br /><strong>Last updated:</strong> February 16, 2026</p>
+
+      <p>
+        Veil ("we", "our", "us") provides the Veil VPN client app (package name:
+        <code>com.veil.vpn</code>).
+      </p>
+      <p>
+        Veil is a VPN <strong>client</strong>. We do not operate public VPN servers inside the app.
+        You connect using your own server/provider profiles.
+      </p>
+
+      <h2>1. Scope</h2>
+      <p>This Privacy Policy explains what information Veil processes, how it is used, and your choices.</p>
+
+      <h2>2. Information We Process</h2>
+
+      <h3>A. Information processed and stored on your device</h3>
+      <p>Veil stores app data locally to provide VPN client features, including:</p>
+      <ul>
+        <li>VPN profiles and related settings (for example: remark, host/address, port, protocol, TLS/SNI, routing options)</li>
+        <li>Profile groups and subscription source URLs</li>
+        <li>Split tunneling lists (selected app package names for include/exclude)</li>
+        <li>Ping/history and connection state details</li>
+        <li>App preferences and feature toggles</li>
+        <li>Cached remote configuration payload</li>
+      </ul>
+      <p>Where supported, sensitive workspace cache data is stored using secure storage provided by the operating system.</p>
+
+      <h3>B. Information used for optional secure link features (<code>veil://</code>)</h3>
+      <p>If you use Veil secure import/export features with device lock:</p>
+      <ul>
+        <li>A device fingerprint is derived on-device and converted to a hash</li>
+        <li>The hash is used only for secure link protection logic</li>
+        <li>We do not send your raw device fingerprint to our servers as part of this feature</li>
+      </ul>
+
+      <h3>C. Information sent over the network</h3>
+      <p>Veil sends network requests in these cases:</p>
+      <ul>
+        <li>When you update/import subscriptions from a URL you provide</li>
+        <li>When the app fetches built-in remote config content (for example app message/ad config)</li>
+        <li>When ads are enabled and loaded (Google Mobile Ads / AdMob)</li>
+        <li>When you connect to a VPN profile, your traffic is routed through the VPN server/provider you selected</li>
+      </ul>
+      <p>These services may receive network metadata such as IP address, request headers (including user agent), and timestamps.</p>
+
+      <h2>3. Permissions We Request</h2>
+      <p>Depending on platform/version and features you use, Veil may request:</p>
+      <ul>
+        <li><code>INTERNET</code>: connect VPN and fetch subscriptions/config</li>
+        <li><code>ACCESS_NETWORK_STATE</code>: network and reconnect behavior</li>
+        <li><code>QUERY_ALL_PACKAGES</code>: split tunneling app picker (list installed apps)</li>
+        <li><code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code>: improve VPN background reliability</li>
+        <li><code>FOREGROUND_SERVICE</code> and VPN service permissions: keep active VPN tunnel running</li>
+        <li>Camera permission (QR import scanner)</li>
+        <li>Advertising ID permission (<code>AD_ID</code>) when ads are enabled</li>
+      </ul>
+
+      <h2>4. How We Use Information</h2>
+      <p>
+        Veil uses Android <code>VpnService</code> to establish a secure IP-level tunnel to the VPN
+        server selected by the user. Veil does not inspect or store the content of users' web traffic
+        passing through the tunnel. Veil may process limited technical and app data required to operate
+        features (such as connection status, ping results, split-tunneling app selection, and local
+        configuration storage), and third-party services may process data under their own privacy
+        policies.
+      </p>
+      <p>We process information to:</p>
+      <ul>
+        <li>Import, parse, and manage VPN configurations</li>
+        <li>Establish and maintain VPN connection state</li>
+        <li>Show connection metrics (for example speed, ping, session time)</li>
+        <li>Support split tunneling selection</li>
+        <li>Improve connection reliability and user troubleshooting</li>
+        <li>Display banner/interstitial ads when configured</li>
+      </ul>
+
+      <h2>5. Data Sharing</h2>
+      <p>We do not sell your personal data.</p>
+      <p>Data may be shared/processed by third parties only as needed for app functionality:</p>
+      <ul>
+        <li><strong>Google Mobile Ads (AdMob)</strong> for ad delivery/measurement when ads are enabled</li>
+        <li><strong>Your selected VPN server/provider</strong> when you connect</li>
+        <li><strong>Subscription/remote-config hosts</strong> when you fetch content from URLs</li>
+      </ul>
+      <p>For third-party data practices, review their privacy policies:</p>
+      <ul>
+        <li>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+        <li>Google Mobile Ads SDK / AdMob: <a href="https://support.google.com/admob/answer/6128543">https://support.google.com/admob/answer/6128543</a></li>
+      </ul>
+
+      <h2>6. What We Do Not Collect as an Account Service</h2>
+      <p>Veil does not require account signup in the app and does not directly require name, email, or phone number to use core VPN client features.</p>
+
+      <h2>7. Data Retention</h2>
+      <ul>
+        <li>Local app data remains on your device until you edit/delete it, clear app data, or uninstall the app.</li>
+        <li>Cached settings/config may be refreshed or overwritten during normal app operation.</li>
+        <li>Third-party services (ad networks, VPN providers, subscription hosts) retain data under their own policies.</li>
+      </ul>
+
+      <h2>8. Security</h2>
+      <p>We apply reasonable technical measures to protect local data and app operations, including:</p>
+      <ul>
+        <li>Secure storage usage where available</li>
+        <li>Optional encrypted secure link format (<code>veil://</code>)</li>
+        <li>Input validation for imported configs</li>
+      </ul>
+      <p>No method of storage or transmission is 100% secure.</p>
+
+      <h2>9. International Data Transfers</h2>
+      <p>Because you choose VPN/subscription/ad services that may operate globally, your data may be processed in countries other than your own.</p>
+
+      <h2>10. Children's Privacy</h2>
+      <p>Veil is not intended for children. We do not knowingly target children with this app. Our Play Console target audience is adults.</p>
+
+      <h2>11. Your Choices</h2>
+      <p>You can:</p>
+      <ul>
+        <li>Delete profiles/groups in the app</li>
+        <li>Disable or avoid optional features you do not want to use (for example QR import, split tunneling, subscription URLs)</li>
+        <li>Clear app storage from system settings</li>
+        <li>Uninstall the app at any time</li>
+      </ul>
+
+      <h2>12. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will post updates with a revised "Last updated" date.</p>
+
+      <h2>13. Contact</h2>
+      <p>For privacy questions or requests, contact:</p>
+      <ul>
+        <li>Telegram: <a href="https://t.me/veilvpnofficial">https://t.me/veilvpnofficial</a></li>
+        <li>Email: <a href="mailto:ninjacoder.mm@gmail.com">ninjacoder.mm@gmail.com</a></li>
+      </ul>
+    </main>
+  </body>
+</html>
